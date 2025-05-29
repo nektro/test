@@ -36,3 +36,22 @@ error: the following build command failed with exit code 1:
 ```
 
 showcase of change in behavior from https://github.com/ziglang/zig/pull/23946 that feels like many will find unexpected
+
+----
+
+the fix is:
+
+```diff
+diff --git a/packages/dep/build.zig b/packages/dep/build.zig
+index c4e5893..1e14edb 100644
+--- a/packages/dep/build.zig
++++ b/packages/dep/build.zig
+@@ -11,6 +11,7 @@ pub fn build(b: *std.Build) void {
+     });
+
+     const run_unit_tests = b.addRunArtifact(unit_tests);
++    run_unit_tests.setCwd(b.path("."));
+     run_unit_tests.has_side_effects = true;
+
+     const test_step = b.step("test", "Run all library tests");
+```
