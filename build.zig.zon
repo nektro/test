@@ -1,0 +1,15 @@
+.{
+    .name = .foo,
+    .version = "0.0.0",
+    .fingerprint = 0x8c736521f7d1aae6,
+    .minimum_zig_version = "0.14.0",
+    .dependencies = .{
+        .dep = .{
+            .path = "./packages/dep",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+    },
+}
