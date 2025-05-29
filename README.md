@@ -34,3 +34,5 @@ test transitive failure
 error: the following build command failed with exit code 1:
 /home/meghan/zig-cache/o/5700fe8b44af56ec2106ea3ac90042b7/build /home/meghan/.local/share/zig/0.15.0-dev.649+e28b4027e/zig /home/meghan/.local/share/zig/0.15.0-dev.649+e28b4027e/lib /home/meghan/dev/test /home/meghan/zig-cache /home/meghan/.cache/zig --seed 0x1b0c703c -Z913d2f0b1b99b0d3 test --summary all
 ```
+
+showcase of change in behavior from https://github.com/ziglang/zig/pull/23946 that feels like many will find unexpected
