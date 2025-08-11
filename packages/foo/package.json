@@ -1,14 +1,8 @@
 {
-  "name": "tmp.pma5ig1x3l",
+  "name": "foo",
   "module": "index.ts",
   "type": "module",
   "private": true,
-  "workspaces":[
-    "./packages/foo"
-  ],
-  "resolutions": {
-    "foo": "workspace:packages/foo"
-  },
   "devDependencies": {
     "@types/bun": "latest"
   },
